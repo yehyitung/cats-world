@@ -9,9 +9,7 @@
          <template slot="subContent">
           <span class="title-icon">副內容</span>
          </template>
-         
        </Card>
-       
       </template>
     </div>
   </div>
