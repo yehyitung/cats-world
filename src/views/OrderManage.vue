@@ -1,6 +1,6 @@
 <template>
-  <div class="products">
-    <h1>Products</h1>
+  <div class="order-manage">
+    <h1>Order Manage</h1>
   </div>
 </template>
 
@@ -8,9 +8,9 @@
 
 <script>
 export default {
-  name:'Products',
+  name:'OrderManage',
   components:{
-    
+
   }
 }
 </script>

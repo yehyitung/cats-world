@@ -2,13 +2,18 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Products from '../views/Products.vue'
+import AllProducts from '../views/AllProducts.vue'
 import Contact from '../views/Contact.vue'
 import Login from '../views/Login.vue'
 import Favorite from '../views/Favorite.vue'
 import CartPage from '../views/CartPage.vue'
 import CompleteCheckout from '../views/CompleteCheckout.vue'
 import Shipping from '../views/Shipping.vue'
+import Adminlogin from '../views/Adminlogin.vue'
+import ProductsManage from '../views/ProductsManage.vue'
+import OrderManage from '../views/OrderManage.vue'
+import Product from '../views/Product.vue'
+
 
 
 Vue.use(VueRouter)
@@ -25,9 +30,9 @@ const routes = [
     component: About
   },
   {
-    path: '/products',
-    name: 'Products',
-    component: Products
+    path: '/all-products',
+    name: 'AllProducts',
+    component: AllProducts
   },
   {
     path: '/contact',
@@ -58,7 +63,28 @@ const routes = [
     path: '/shipping',
     name: 'Shipping',
     component: Shipping
+  },
+  {
+    path: '/adminlogin',
+    name: 'Adminlogin',
+    component: Adminlogin
+  },
+  {
+    path: '/products-manage',
+    name: 'ProductsManage',
+    component: ProductsManage
+  },
+  {
+    path: '/order-manage',
+    name: 'OrderManage',
+    component: OrderManage
+  },
+  {
+    path: '/product',
+    name: 'Product',
+    component: Product
   }
+  
 ]
 
 const router = new VueRouter({
