@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <nav class="navbar">
-      <a class="navbar-brand" href="#">
+      <router-link class="navbar-brand" to="/">
         <img class="navbar-logo" src="./assets/KittyLucifer-logo.png" alt="logo">
-      </a>
+      </router-link>
       <div class="navbar-wrapper">
         <ul class="navbar-list">
           <li class="nav-item">
-            <router-link class="nav-link" to="/">Home</router-link>
+            <router-link class="nav-link bottom-line" to="/">Home</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/about">About</router-link>
@@ -44,7 +44,7 @@
 
 <style lang="scss">
 #app {
-  font-family: 'Alegreya', serif, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Alegreya', 'Noto Sans TC', serif, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -71,6 +71,9 @@
       padding: 10px;
       .nav-link{
         padding: 10px;
+        &:hover{
+          border-bottom: 3px solid  rgb(189, 30, 30);
+        }
       }
     }
   }
@@ -113,6 +116,9 @@
       padding: 10px;
       .social-icon-link{
         padding: 10px;
+        &:hover{
+          color: rgb(189, 30, 30);
+        }
       }
     }
   }

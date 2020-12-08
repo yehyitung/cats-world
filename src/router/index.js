@@ -6,6 +6,9 @@ import Products from '../views/Products.vue'
 import Contact from '../views/Contact.vue'
 import Login from '../views/Login.vue'
 import Favorite from '../views/Favorite.vue'
+import CartPage from '../views/CartPage.vue'
+import CompleteCheckout from '../views/CompleteCheckout.vue'
+import Shipping from '../views/Shipping.vue'
 
 
 Vue.use(VueRouter)
@@ -40,6 +43,21 @@ const routes = [
     path: '/favorite',
     name: 'Favorite',
     component: Favorite
+  },
+  {
+    path: '/cart-page',
+    name: 'CartPage',
+    component: CartPage
+  },
+  {
+    path: '/complete-checkout',
+    name: 'CompleteCheckout',
+    component: CompleteCheckout
+  },
+  {
+    path: '/shipping',
+    name: 'Shipping',
+    component: Shipping
   }
 ]
 

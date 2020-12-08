@@ -1,6 +1,6 @@
 <template>
-  <div class="products">
-    <h1>Products</h1>
+  <div class="cart-page">
+    <h1>CartPage</h1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name:'Products',
+  name:'CartPage',
   components:{
     
   }
