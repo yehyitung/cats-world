@@ -108,20 +108,20 @@
       }
     }
     .social-icon-list{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-around;
-    .social-icon-item{
-      padding: 10px;
-      .social-icon-link{
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: space-around;
+      .social-icon-item{
         padding: 10px;
-        &:hover{
-          color: rgb(189, 30, 30);
+        .social-icon-link{
+          padding: 10px;
+          &:hover{
+            color: rgb(189, 30, 30);
+          }
         }
       }
     }
-  }
   }
 }
 
