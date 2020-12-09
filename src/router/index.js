@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import AllProducts from '../views/AllProducts.vue'
+import Product from '../views/Product.vue'
 import Contact from '../views/Contact.vue'
 import Login from '../views/Login.vue'
 import Favorite from '../views/Favorite.vue'
@@ -10,9 +11,10 @@ import CartPage from '../views/CartPage.vue'
 import CompleteCheckout from '../views/CompleteCheckout.vue'
 import Shipping from '../views/Shipping.vue'
 import Adminlogin from '../views/Adminlogin.vue'
+import Dashboard from '../views/Dashboard.vue'
 import ProductsManage from '../views/ProductsManage.vue'
 import OrderManage from '../views/OrderManage.vue'
-import Product from '../views/Product.vue'
+
 
 
 
@@ -33,6 +35,11 @@ const routes = [
     path: '/all-products',
     name: 'AllProducts',
     component: AllProducts
+  },
+  {
+    path: '/product',
+    name: 'Product',
+    component: Product
   },
   {
     path: '/contact',
@@ -70,6 +77,11 @@ const routes = [
     component: Adminlogin
   },
   {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
+  },
+  {
     path: '/products-manage',
     name: 'ProductsManage',
     component: ProductsManage
@@ -78,13 +90,7 @@ const routes = [
     path: '/order-manage',
     name: 'OrderManage',
     component: OrderManage
-  },
-  {
-    path: '/product',
-    name: 'Product',
-    component: Product
   }
-  
 ]
 
 const router = new VueRouter({
